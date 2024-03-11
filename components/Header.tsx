@@ -58,6 +58,7 @@ const Header = () => {
             {nav.map((item)=> 
               <Link
                 href={item.href}
+                key={item.title}
                 className="inline-flex items-center border-b-2 border-white px-1 pt-1 text-sm font-medium text-white"
               >
                 {item.title}
