@@ -1,4 +1,48 @@
+import { AppWindowIcon, Banknote, Building, Building2Icon, FileCheck2, Gavel, HandCoinsIcon, Stamp, UserRoundSearch } from 'lucide-react'
 import React from 'react'
+
+const options = [
+  {
+    title: 'Online Business Permit and Licensing System', 
+    href: '#',
+    icon: <Stamp className='h-10 w-10 p-1'/>
+  },
+  {
+    title: 'Online Building Permit System', 
+    href: '#',
+    icon: <Building2Icon className='h-10 w-10 p-1'/>
+  },
+  {
+    title: 'Online Cedula Application', 
+    href: '#',
+    icon: <AppWindowIcon className='h-10 w-10 p-1'/>
+  },
+  {
+    title: 'Social Services', 
+    href: '#',
+    icon: <HandCoinsIcon className='h-10 w-10 p-1'/>
+  },
+  {
+    title: 'Online Payment', 
+    href: '#',
+    icon: <Banknote className='h-10 w-10 p-1'/>
+  },
+  {
+    title: 'Civil Status Registry', 
+    href: '#',
+    icon: <FileCheck2 className='h-10 w-10 p-1'/>
+  }, {
+    title: 'Career Opportunities', 
+    href: '#',
+    icon: <UserRoundSearch className='h-10 w-10 p-1'/>
+  },
+  {
+    title: 'Sangguniang Pang Munisipalidad', 
+    href: '#',
+    icon: <Gavel className='h-10 w-10 p-1'/>
+  },
+
+]
 
 const Services = () => {
   return (
@@ -8,62 +52,16 @@ const Services = () => {
       <div className="flex hover:inline-flex flex-col md:flex-row md:space-x-2">
         <div className="grid gap-5 grid-cols-3 grid-rows-3">
 
-            <div className='mb-2 box-border border-2 border-black items-center text-center justify-center rounded-md bg-white p-4 py-4 text-xl shadow-md hover:scale-110 transition-transform duration-300 ease-in-out'>
-              <div className="flex items-center justify-center ">
-                 <img className="h-10 w-10 p-1" src="/stamp.png" ></img>
-              </div>
-             <a className="flex-1 item-center justify-center" href="#">Online Business Permit and Licensing System</a>
-            </div>
+          {options.map((item) => 
 
-            <div className='mb-2 box-border border-2 border-black items-center text-center justify-center rounded-md bg-white p-4 py-4 text-xl shadow-md hover:scale-110 transition-transform duration-300 ease-in-out'>
-              <div className="flex items-center justify-center">
-                 <img className="h-10 w-10 p-1" src="/building.png" ></img>
-              </div>
-             <a className="flex-1 item-center justify-center" href="#">Online Building Permit System</a>
-            </div>
+    <div className='mb-2 box-border border-2 border-black items-center text-center justify-center rounded-md bg-white p-4 py-4 text-xl shadow-md hover:scale-110 transition-transform duration-300 ease-in-out'>
+      <div className="flex items-center justify-center ">
+          {item.icon}
+        </div>
+      <a className="flex-1 item-center justify-center" href={item.href}> {item.title} </a>
+    </div>
 
-            <div className='mb-2 box-border border-2 border-black items-center text-center justify-center rounded-md bg-white p-4 py-4 text-xl shadow-md hover:scale-110 transition-transform duration-300 ease-in-out'>
-              <div className="flex items-center justify-center">
-                 <img className="h-10 w-10 p-1" src="/id-card.png" ></img>
-              </div>
-             <a className="flex-1 item-center justify-center" href="#">Online Cedula Application</a>
-            </div>
-
-            <div className='mb-2 box-border border-2 border-black items-center text-center justify-center rounded-md bg-white p-4 py-4 text-xl shadow-md hover:scale-110 transition-transform duration-300 ease-in-out'>
-              <div className="flex items-center justify-center">
-                 <img className="h-10 w-10 p-1" src="/saving.png" ></img>
-              </div>
-             <a className="flex-1 item-center justify-center" href="#">Social Services</a>
-            </div>
-
-            <div className='mb-2 box-border border-2 border-black items-center text-center justify-center rounded-md bg-white p-4 py-4 text-xl shadow-md hover:scale-110 transition-transform duration-300 ease-in-out'>
-              <div className="flex items-center justify-center">
-                 <img className="h-10 w-10 p-1" src="/financing.png" ></img>
-              </div>
-             <a className="flex-1 item-center justify-center" href="#">Online Payment</a>
-            </div>
-
-            <div className='mb-2 box-border border-2 border-black items-center text-center justify-center rounded-md bg-white p-4 py-4 text-xl shadow-md hover:scale-110 transition-transform duration-300 ease-in-out'>
-              <div className="flex items-center justify-center">
-                 <img className="h-10 w-10 p-1" src="/documents-folder.png" ></img>
-              </div>
-             <a className="flex-1 item-center justify-center" href="#">Civil Status Registry</a>
-            </div>
-
-            <div className='mb-2 box-border border-2 border-black items-center text-center justify-center rounded-md bg-white p-4 py-4 text-xl shadow-md hover:scale-110 transition-transform duration-300 ease-in-out'>
-              <div className="flex items-center justify-center">
-                 <img className="h-10 w-10 p-1" src="/job-search.png" ></img>
-              </div>
-             <a className="flex-1 item-center justify-center" href="#">Career Opportunities</a>
-            </div>
-
-            <div className='mb-2 box-border border-2 border-black items-center text-center justify-center rounded-md bg-white p-4 py-4 text-xl shadow-md hover:scale-110 transition-transform duration-300 ease-in-out'>
-              <div className="flex items-center justify-center">
-                 <img className="h-10 w-10 p-1" src="/auction.png" ></img>
-              </div>
-             <a className="flex-1 item-center justify-center" href="#">Sangguniang Pang Munisipalidad</a>
-            </div>
-
+          )}
 
         </div>
         <div className="w-auto pt-11 md:w-1/3 lg:w-2/3">
