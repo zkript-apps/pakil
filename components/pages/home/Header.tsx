@@ -1,20 +1,11 @@
-"use client"
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { PlusIcon } from '@heroicons/react/20/solid'
-import combineClasses from '@/helpers/combineClasses'
+import React from 'react'
 import PakilLogo from "@/public/pakil-logo.png"
-import Image from "next/image"
 import Link from "next/link"
+import Image from "next/image"
 
-
-export default function Content() {
+const Header = () => {
   return (
-    <Disclosure as="nav" className="bg-blue-900 shadow">
-      {({ open }) => (
-        <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 item-start">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 item-start bg-blue-900 shadow">
             <div className="flex h-16 justify-between">
               <div className="flex">
                 <div className="p-2">
@@ -87,8 +78,7 @@ export default function Content() {
               </div>
             </div>
           </div>
-        </>
-      )}
-    </Disclosure>
   )
 }
+
+export default Header
