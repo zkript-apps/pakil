@@ -2,8 +2,6 @@ import React from 'react'
 
 const Services = () => {
   return (
-
-    // services
     <div className=" bg-blue-400">
   <div className="p-16">
     <div className="flex flex-row">
