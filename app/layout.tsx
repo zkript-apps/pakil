@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Services from '@/components/pages/home/Services'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" type="image/x-icon" href={`/pakil-logo.png`} />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Services/>
+        {children}
+        </body>
     </html>
   )
 }
