@@ -1,12 +1,10 @@
-import Content from '@/components/pages/home/Content'
-import Services from '@/components/pages/home/Services'
-
 export default function Home() {
-  return (
+    return (
     <>
-  <Content/>
-  <Services/>
   
-  </>
-  ) 
+  <h2>Services Page</h2>
+  
+    </>
+
+    )
 }
