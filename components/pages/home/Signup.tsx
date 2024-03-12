@@ -1,6 +1,6 @@
 import React from 'react'
 
-const signup = () => {
+const Signup = () => {
   return (
 <div className="flex bg-no-repeat bg-cover bg-center max-w-full py-20 bg-[url('/hands.jpg')]">
     <div className="flex-1 px-4 py-11 mx-auto max-w-screen-xl text-center text-white">
@@ -15,4 +15,4 @@ const signup = () => {
   )
 }
 
-export default signup
+export default Signup
