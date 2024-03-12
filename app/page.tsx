@@ -1,10 +1,11 @@
 export default function Home() {
-    return (
-    <>
-  
-  <h2>Services Page</h2>
-  
-    </>
+  return (
 
-    )
+  <>
+
+  <h1>Department Page</h1>
+
+  </>
+
+  )
 }
