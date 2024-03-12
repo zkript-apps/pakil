@@ -1,4 +1,4 @@
-import Module from '@/module/Home/index'
+import Module from '@/module/Home'
 
 export default function Home() {
   return (
