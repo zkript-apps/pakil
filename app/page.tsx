@@ -1,11 +1,11 @@
+import Module from '@/module/Home/index'
+
 export default function Home() {
   return (
 
-  <>
-
-  <h1>Department Page</h1>
-
-  </>
+    <>
+    <Module/>
+    </>
 
   )
 }
