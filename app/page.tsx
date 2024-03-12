@@ -1,5 +1,10 @@
-import Content from '@/components/pages/home/Content'
 
 export default function Home() {
-  return <Content/>
+  return (
+  <>
+  <h1>Home page</h1>
+
+  </>
+    
+  )
 }
