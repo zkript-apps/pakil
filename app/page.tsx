@@ -1,4 +1,4 @@
-import Content from '@/components/pages/home/Content'
+import Content from '@/components/Footer'
 
 export default function Home() {
   return <Content/>
