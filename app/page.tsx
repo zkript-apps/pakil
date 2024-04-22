@@ -1,5 +1,5 @@
-import Content from '@/components/pages/home/Content'
+import Module from "@/module/Home"
 
 export default function Home() {
-  return <Content/>
+  return <Module/>
 }
